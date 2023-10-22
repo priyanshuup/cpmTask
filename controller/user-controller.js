@@ -22,7 +22,7 @@ export const getUsers = async (request, response) =>{
 }
 
 export const getUser = async (request, response) =>{
-     console.log(request.params.id);
+     // console.log(request.params.id);
      try {
      //    const user = await User.find({_id: request.params.id});
         const user = await User.findById({_id: request.params.id});
